@@ -1,0 +1,11 @@
+sudo -i #might need to do this
+curl -L https://github.com/docker/compose/releases/download/$dockerComposeVersion/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose #get latest compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+#sudo apt-get -y install docker-compose #outdated docker-compose
+sudo apt-get -y install docker.io #might not need for Compose
+
+docker-compose up -d
+
+#navigate to EC2PublicDNS:8000
