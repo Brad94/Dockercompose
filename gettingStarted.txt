@@ -1,10 +1,6 @@
 sudo -i #might need to do this
-curl -L https://github.com/docker/compose/releases/download/$dockerComposeVersion/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose #get latest compose
+curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose #get compose vesion 1.14
 sudo chmod +x /usr/local/bin/docker-compose
-
-
-#sudo apt-get -y install docker-compose #outdated docker-compose
-sudo apt-get -y install docker.io #might not need for Compose
 
 docker-compose up -d
 
